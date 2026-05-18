@@ -1,1 +1,0 @@
-# openvla.github.io
