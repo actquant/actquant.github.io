@@ -238,28 +238,29 @@
 
     /* ===== Fluid scaling for big screens / TVs ===== */
     /* Widen main content area well past Bulma's desktop cap */
-    .section .container.is-max-desktop,
-    #BibTeX .container.is-max-desktop {
+    .container.is-max-desktop {
       max-width: min(94vw, 2400px) !important;
     }
+    /* Hero/teaser containers also widen so the title block and teaser image scale */
+    .hero .container.is-max-desktop { max-width: min(94vw, 2200px) !important; }
 
     /* Body text scales up generously on huge screens */
     body { font-size: clamp(1rem, 0.7rem + 0.85vw, 1.8rem); }
 
     /* Headings */
-    .brand-title       { font-size: clamp(3rem, 1.5rem + 4.5vw, 9rem) !important; }
-    .brand-subtitle    { font-size: clamp(1.25rem, 0.7rem + 1.2vw, 3rem) !important; max-width: min(92vw, 1400px); }
-    .section .title.is-3 { font-size: clamp(1.5rem, 0.8rem + 1.6vw, 3.6rem) !important; }
-    #BibTeX .title     { font-size: clamp(1.5rem, 0.8rem + 1.6vw, 3.6rem); }
+    .brand-title       { font-size: clamp(3rem, 0.5rem + 7vw, 12rem) !important; }
+    .brand-subtitle    { font-size: clamp(1.25rem, 0.4rem + 2vw, 4rem) !important; max-width: min(92vw, 1600px); }
+    .section .title.is-3 { font-size: clamp(1.5rem, 0.6rem + 2vw, 4rem) !important; }
+    #BibTeX .title     { font-size: clamp(1.5rem, 0.6rem + 2vw, 4rem); }
 
     /* Hero buttons & badges */
     .publication-hero .button {
-      font-size: clamp(1rem, 0.75rem + 0.55vw, 1.7rem) !important;
+      font-size: clamp(1rem, 0.55rem + 1vw, 2.2rem) !important;
       padding: 0.7em 1.3em !important;
       height: auto !important;
     }
-    .brand-badge { font-size: clamp(0.8rem, 0.65rem + 0.35vw, 1.35rem); }
-    .publication-authors { font-size: clamp(1rem, 0.75rem + 0.55vw, 1.7rem) !important; }
+    .brand-badge { font-size: clamp(0.8rem, 0.5rem + 0.55vw, 1.8rem); }
+    .publication-authors { font-size: clamp(1rem, 0.55rem + 1vw, 2.2rem) !important; }
 
     /* Table grows / stays readable on big screens */
     .results-table { font-size: clamp(0.9rem, 0.6rem + 0.65vw, 1.6rem); }
