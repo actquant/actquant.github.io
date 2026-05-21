@@ -270,6 +270,8 @@
 
     /* Real-world rollout videos */
     .rollouts-section { background: #f6f8fc; padding: 3rem 0; border-top: 1px solid #e3e8f1; }
+    .rollouts-section .title.is-3 { font-size: clamp(1.5rem, 0.8rem + 1.6vw, 3.6rem) !important; }
+    .rollouts-section .figure-caption { font-size: clamp(1rem, 0.8rem + 0.55vw, 1.8rem); }
     .rollouts-wrap {
       max-width: 100%;
       margin: 0 auto;
@@ -284,7 +286,7 @@
       border-radius: 8px;
       font-family: 'Google Sans', sans-serif;
       font-weight: 600;
-      font-size: 1.05rem;
+      font-size: clamp(1.05rem, 0.85rem + 0.5vw, 1.9rem);
       letter-spacing: 0.01em;
       border-left: 5px solid var(--gold-500);
       margin-bottom: 1.1rem;
@@ -292,13 +294,13 @@
     .task-prompt::before {
       content: '"';
       color: var(--gold-400);
-      font-size: 1.2rem;
+      font-size: 1.2em;
       margin-right: 0.2rem;
     }
     .task-prompt::after {
       content: '"';
       color: var(--gold-400);
-      font-size: 1.2rem;
+      font-size: 1.2em;
       margin-left: 0.2rem;
     }
     /* Fluid sizing: video heights scale with the viewport */
