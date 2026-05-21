@@ -239,9 +239,9 @@
     /* Real-world rollout videos */
     .rollouts-section { background: #f6f8fc; padding: 3rem 0; border-top: 1px solid #e3e8f1; }
     .rollouts-wrap {
-      max-width: min(1900px, 100%);
+      max-width: 100%;
       margin: 0 auto;
-      padding: 0 clamp(0.75rem, 2vw, 2rem);
+      padding: 0 clamp(0.75rem, 2vw, 3rem);
     }
     .task-block { margin: 0 0 3.2rem 0; }
     .task-prompt {
@@ -332,10 +332,10 @@
     /* Single-view (no wrist) cards take ext's full card width */
     .episode-card.solo .video-wrap.ext { flex: 1 1 0; }
 
-    /* Single-episode tasks: cap so the pair doesn't get huge */
-    .episode-grid:not(.row) .episode-card { max-width: clamp(520px, 60vw, 880px); }
+    /* Single-episode tasks: keep card sized to about 2/3 of viewport */
+    .episode-grid:not(.row) .episode-card { max-width: min(85vw, 1800px); }
 
-    /* Multi-episode rows: all cards in one line, each ~50% of container */
+    /* Multi-episode rows: all cards in one line, each fills its share */
     .episode-grid.row { flex-wrap: nowrap; }
     .episode-grid.row .episode-card { flex: 1 1 0; }
 
