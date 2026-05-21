@@ -244,6 +244,17 @@
     /* Hero/teaser containers also widen so the title block and teaser image scale */
     .hero .container.is-max-desktop { max-width: min(94vw, 2200px) !important; }
 
+    /* Center & scale main figures (teaser, figure 1, UR3) on wide screens */
+    .hero.teaser img,
+    .section .content > img,
+    .section .content > p > img {
+      display: block !important;
+      margin: 0 auto !important;
+      width: 100%;
+      max-width: min(85vw, 1700px);
+      height: auto;
+    }
+
     /* Body text scales up generously on huge screens */
     body { font-size: clamp(1rem, 0.7rem + 0.85vw, 1.8rem); }
 
