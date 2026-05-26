@@ -236,54 +236,17 @@
     .footer a { color: var(--gold-400); }
     .footer a:hover { color: var(--gold-500); }
 
-    /* ===== Fluid scaling for big screens / TVs ===== */
-    /* Widen main content area well past Bulma's desktop cap */
-    .container.is-max-desktop {
-      max-width: min(94vw, 2400px) !important;
-    }
-    /* Hero/teaser containers also widen so the title block and teaser image scale */
-    .hero .container.is-max-desktop { max-width: min(94vw, 2200px) !important; }
-
-    /* Center & scale main figures (teaser, figure 1, UR3) on wide screens */
+    /* (Big-screen fluid scaling intentionally removed — use Bulma defaults) */
     .hero.teaser img,
-    .section .content > img,
-    .section .content > p > img {
-      display: block !important;
-      margin: 0 auto !important;
-      width: 100%;
-      max-width: min(85vw, 1700px);
+    .section .content > img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
       height: auto;
     }
 
-    /* Body text scales up generously on huge screens */
-    body { font-size: clamp(1rem, 0.7rem + 0.85vw, 1.8rem); }
-
-    /* Headings */
-    .brand-title       { font-size: clamp(3rem, 0.5rem + 7vw, 12rem) !important; }
-    .brand-subtitle    { font-size: clamp(1.25rem, 0.4rem + 2vw, 4rem) !important; max-width: min(92vw, 1600px); }
-    .section .title.is-3 { font-size: clamp(1.5rem, 0.6rem + 2vw, 4rem) !important; }
-    #BibTeX .title     { font-size: clamp(1.5rem, 0.6rem + 2vw, 4rem); }
-
-    /* Hero buttons & badges */
-    .publication-hero .button {
-      font-size: clamp(1rem, 0.55rem + 1vw, 2.2rem) !important;
-      padding: 0.7em 1.3em !important;
-      height: auto !important;
-    }
-    .brand-badge { font-size: clamp(0.8rem, 0.5rem + 0.55vw, 1.8rem); }
-    .publication-authors { font-size: clamp(1rem, 0.55rem + 1vw, 2.2rem) !important; }
-
-    /* Table grows / stays readable on big screens */
-    .results-table { font-size: clamp(0.9rem, 0.6rem + 0.65vw, 1.6rem); }
-
-    /* Figure captions & BibTeX */
-    .figure-caption { font-size: clamp(0.95rem, 0.75rem + 0.45vw, 1.6rem); }
-    #BibTeX pre { font-size: clamp(0.9rem, 0.75rem + 0.45vw, 1.55rem); }
-
     /* Real-world rollout videos */
     .rollouts-section { background: #f6f8fc; padding: 3rem 0; border-top: 1px solid #e3e8f1; }
-    .rollouts-section .title.is-3 { font-size: clamp(1.5rem, 0.8rem + 1.6vw, 3.6rem) !important; }
-    .rollouts-section .figure-caption { font-size: clamp(1rem, 0.8rem + 0.55vw, 1.8rem); }
     .rollouts-wrap {
       max-width: 100%;
       margin: 0 auto;
@@ -298,7 +261,7 @@
       border-radius: 8px;
       font-family: 'Google Sans', sans-serif;
       font-weight: 600;
-      font-size: clamp(1.05rem, 0.85rem + 0.5vw, 1.9rem);
+      font-size: 1.05rem;
       letter-spacing: 0.01em;
       border-left: 5px solid var(--gold-500);
       margin-bottom: 1.1rem;
